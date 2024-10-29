@@ -4,13 +4,12 @@ Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe i
 
 🤖 \ - Informações:
 >>>**Nome:** `$username[$botID]#$discriminator[$botID] ( $botID )`
-**Criador:** $displayName[$var[dev]] - `$username[$var[dev]] ( $var[dev] )`
-**Criado em:** <t:$httpResult:D>
+**Criador:** $displayName[1242430100184502303] - `$username[1242430100184502303] (1242430100184502303)`
+**Criado em:** $httpResult
 **Prefixo:** `$getServerVar[prefix]`
 
  📈 \ - Status:
 >>> **Servidores:** `$serverCount`
-**Membros:** `$allMembersCount`
 **Tempo de execução:** `$executionTimems`
 **Hosting terminará:** `$hostingExpireTime`
 uptime `$uptime`
@@ -19,4 +18,4 @@ uptime `$uptime`
 >>> Nenhum ainda.
 
 🔧\ - Minha Equipe que fez eu:;
-$displayName[$var[dev]] - (ceo/dev)
+$displayName[1242430100184502303] - (ceo/dev)
