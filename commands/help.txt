@@ -1,4 +1,4 @@
-$title[Lista de todos os meus comandos]
+$title[✨️ • Lista de todos os meus comandos]
 $description[Comandos disponíveis
 $getVar[cmds]
 ]
