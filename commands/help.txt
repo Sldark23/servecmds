@@ -1,0 +1,5 @@
+$title[Lista de todos os meus comandos]
+$description[Comandos disponíveis
+$getVar[cmds]
+]
+$footer[Utilizado por $displayName[$authorID]]
