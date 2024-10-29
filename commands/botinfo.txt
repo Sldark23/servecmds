@@ -1,3 +1,4 @@
+$var[dev;1242430100184502303]
 $color[#5865f2]
 $thumbnail[$userAvatar[$botID]]
 $title[( ℹ️ ) › Informações do Bot | $username[$botID]]
@@ -17,4 +18,7 @@ uptime `$uptime`
 ]
 $addField[[ 📎 \] - Alguns links:;
 >>> Nenhum ainda.
+]
+$addField[[🔧\] - Minha Equipe que fez eu:;
+$displayName[$var[dev]] - (ceo/dev)
 ]
