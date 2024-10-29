@@ -1,0 +1,32 @@
+$nomention
+$onlyIf[$and[$jsonParse[$getVar[blacklist;$authorID]]$json[blacklist]==sim;$getTimestamp<=$json[tempo]]==false;:sob: <@$authorID>, Você está bloqueado de utilizar meus comandos até <t:$json[tempo]:F>!
+> Motivo: $json[motivo]]
+
+$botTyping
+$title[Server info de - `$serverName[$guildID]`]
+$color[000001]
+$description[
+💬 | Nome do server:
+> `$serverName[$guildID]`
+🆔 | Id do server:
+> `$guildID`
+👑 | Criador do server:
+> `$serverOwner`
+👮‍♂️ | Total de cargos:
+> `$roleCount`
+👮‍♂️ | Total de canais:
+> `$channelCount`
+🙂 | Maior cargo:
+> <@$highestRole>
+🙃 | Menor cargo:
+> <@$lowestRole>
+😁 | Total de emojis:
+> `$emoteCount`
+🌍 | Região do server:
+> `$serverRegion`
+✅ | Servidor verifiado'
+> `$serverVerificationLvl`
+]
+$footer[server info]
+$footerIcon[$serverIcon]
+$thumbnail[$serverIcon]
