@@ -1,8 +1,6 @@
 $var[dev;1242430100184502303]
-$color[#5865f2]
-$thumbnail[$userAvatar[$botID]]
-$title[( ℹ️ ) › Informações do Bot | $username[$botID]]
-$description[Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!
+( ℹ️ ) › Informações do Bot | $username[$botID]
+Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!
 
 🤖 \ - Informações:
 >>>**Nome:** `$username[$botID]#$discriminator[$botID] ( $botID )`
@@ -22,4 +20,3 @@ uptime `$uptime`
 
 🔧\ - Minha Equipe que fez eu:;
 $displayName[$var[dev]] - (ceo/dev)
-]
