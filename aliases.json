@@ -2,7 +2,8 @@
 {
   "teste": ["t", "te"],
   "help": ["ajuda", "h", "comandos", "commands"],
-  "botinfo": ["botinfo", "b", "infobot"],
+  "botinfo": ["b", "infobot"],
   "eval": [],
-  "ping": []
+  "ping": [],
+  "serverinfo": ["s", "infoserver"]
 }
