@@ -1,0 +1,29 @@
+$nomention
+$reply
+$onlyIf[$and[$jsonParse[$getVar[blacklist;$authorID]]$json[blacklist]==sim;$getTimestamp<=$json[tempo]]==false;:sob: <@$authorID>, Você está bloqueado de utilizar meus comandos até <t:$json[tempo]:F>!
+> Motivo: $json[motivo]]
+
+$var[dev;1242430100184502303]
+$var[prefix;av+]
+$httpGet[https://helloacm.com/api/unix-timestamp-converter/?cached&s=$creationDate[$botID;2006-01-02+15:04:05]]
+
+$color[#5865f2]
+$thumbnail[$userAvatar[$botID]]
+$title[( ℹ️ ) › Informações do Bot | $username[$botID]]
+$description[Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!]
+$addField[[ 🤖 \] - Informações:;
+>>>**Nome:** `$username[$botID]#$discriminator[$botID] ( $botID )`
+**Criador:** $displayName[$var[dev]] - `$username[$var[dev]] ( $var[dev] )`
+**Criado em:** <t:$httpResult:D>
+**Prefixo:** `$getServerVar[prefix]`
+]
+$addField[[ 📈 \] - Status:;
+>>> **Servidores:** `$serverCount`
+**Membros:** `$allMembersCount`
+**Tempo de execução:** `$executionTimems`
+**Hosting terminará:** `$hostingExpireTime`
+uptime `$uptime`
+]
+$addField[[ 📎 \] - Alguns links:;
+>>> Nenhum ainda.
+]
