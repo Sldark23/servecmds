@@ -2,23 +2,24 @@ $var[dev;1242430100184502303]
 $color[#5865f2]
 $thumbnail[$userAvatar[$botID]]
 $title[( ℹ️ ) › Informações do Bot | $username[$botID]]
-$description[Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!]
-$addField[[ 🤖 \] - Informações:;
+$description[Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!
+
+🤖 \ - Informações:
 >>>**Nome:** `$username[$botID]#$discriminator[$botID] ( $botID )`
 **Criador:** $displayName[$var[dev]] - `$username[$var[dev]] ( $var[dev] )`
 **Criado em:** <t:$httpResult:D>
 **Prefixo:** `$getServerVar[prefix]`
-]
-$addField[[ 📈 \] - Status:;
+
+ 📈 \ - Status:
 >>> **Servidores:** `$serverCount`
 **Membros:** `$allMembersCount`
 **Tempo de execução:** `$executionTimems`
 **Hosting terminará:** `$hostingExpireTime`
 uptime `$uptime`
-]
-$addField[[ 📎 \] - Alguns links:;
+
+ 📎 \ - Alguns links:;
 >>> Nenhum ainda.
-]
-$addField[[🔧\] - Minha Equipe que fez eu:;
+
+🔧\ - Minha Equipe que fez eu:;
 $displayName[$var[dev]] - (ceo/dev)
 ]
