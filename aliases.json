@@ -1,4 +1,5 @@
 
 {
-  "teste": ["t", "te"]
+  "teste": ["t", "te"],
+  "help": ["ajuda", "h", "comandos", "commands]
 }
