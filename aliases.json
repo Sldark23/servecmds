@@ -1,5 +1,6 @@
 
 {
   "teste": ["t", "te"],
-  "help": ["ajuda", "h", "comandos", "commands"]
+  "help": ["ajuda", "h", "comandos", "commands"],
+  "botinfo": ["botinfo", "b", "infobot"]
 }
