@@ -1,0 +1,23 @@
+$nomention 
+$textSplit[?0?;?]
+$var[type;globalUser]
+$var[v;Money]
+$var[+;$calculate[$splitText[2]]]
+$color[4C0FC8]
+$title[( 🏆 | Top #$sum[$var[+];10]]
+$thumbnail[https://media.discordapp.net/attachments/995031082812575805/1041041014586081320/emoji.png]
+$var[ms;`( Posição Vazia )`]
+$description[>>> **$sum[$var[+];1].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];1];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];1];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];2].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];2];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];2];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];3].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];3];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];3];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];4].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];4];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];4];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];5].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];5];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];5];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];6].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];6];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];6];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];7].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];7];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];7];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];8].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];8];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];8];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];9].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];9];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];9];value];.] )`$catch$var[ms]$endtry
+**$sum[$var[+];10].** $try$var[i;$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];10];id]]$username[$var[i]]#$discriminator[$var[i]] - `( $numberSeparator[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];10];value];.] )`$catch$var[ms]$endtry
+]
+$addButton[no;lb?$splitText[2]-10?$authorID;;secondary;$if[$getLeaderboardValue[$var[type];$var[v];asc;$var[+];id]!=] no $else yes $endif;◀️]
+$addButton[no;lb?$splitText[2]?$authorID;;secondary;;🔃]
+$addButton[no;lb?$splitText[2]+10?$authorID;;secondary;$if[$getLeaderboardValue[$var[type];$var[v];asc;$sum[$var[+];11];id]!=] no $else yes $endif;▶️]
