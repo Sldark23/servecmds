@@ -1,3 +1,4 @@
+$onlyIf[$getVar[blacklist;$authorID]==false;Você está na minha blacklist, portanto não pode utilizar meus comandos!]
 $var[dev;1242430100184502303]
 ( ℹ️ ) › Informações do Bot | $username[$botID]
 Olá novamente internauta. Aposto que tenho uma informação sobre mim que lhe interessa!
