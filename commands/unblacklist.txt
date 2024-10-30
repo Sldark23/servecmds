@@ -1,0 +1,7 @@
+$nomention
+$onlyForIDs[$botOwnerID;:x: Somente meu dono tem acesso à esse comando!]
+$var[user;$findUser[$message[1];no]]
+$onlyIf[$var[user]!=;:x: Insira o usuário que será adicionado a blacklist.]
+
+$setVar[blacklist;false;$var[user]]
+O **$username[$var[user]] foi retirado da blacklist com sucesso!
