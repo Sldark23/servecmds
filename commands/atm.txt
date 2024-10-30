@@ -1,0 +1,9 @@
+$nomention
+$reply
+$title[ Saldo]
+$description[$username[$mentioned[1;yes]] tem
+💸 Carteira: **$numberSeparator[$getVar[Money;$mentioned[1;yes]]]**
+🏦 Banco: **$numberSeparator[$getVar[banco;$mentioned[1;yes]]]**
+
+]
+$color[#8C52FF]
