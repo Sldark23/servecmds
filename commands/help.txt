@@ -1,3 +1,4 @@
+$onlyIf[$getVar[blacklist;$authorID]==false;Você está na minha blacklist, portanto não pode utilizar meus comandos!]
 $title[✨️ • Lista de todos os meus comandos]
 $description[Comandos disponíveis
 $getVar[cmds]
