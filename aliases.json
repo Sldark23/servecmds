@@ -9,5 +9,6 @@
   "atm": ["saldo", "bal", "carteira", "sucoins", "balance"],
   "work": ["trabalhar"],
   "blacklist": ["black", "bl", "listblack"],
-  "unblacklist": ["unblack", "unbl", "unlistblack"]
+  "unblacklist": ["unblack", "unbl", "unlistblack"],
+  "rank": ["top", "ranking", "r", "rk"]
 }
