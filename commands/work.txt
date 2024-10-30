@@ -1,0 +1,36 @@
+$nomention
+$onlyIf[$getVar[blacklist;$authorID]==false;Você está na minha blacklist, portanto não pode utilizar meus comandos!]
+$var[job;$getVar[job;$authorID]]
+
+$if[$var[job]==null]
+$title[💼 | Seleção de emprego]
+$description[> Selecione seu emprego e comece a trabalhar]
+$thumbnail[$authorAvatar]
+
+$newSelectMenu[newjob;1;1;Selecione seu emprego]
+
+$addSelectMenuOption[newjob;Pedreiro;pedreiro-$authorID;Salario: 12.000;no;👷‍♂️]
+$addSelectMenuOption[newjob;Cozinheiro;cozinheiro-$authorID;Salario: 17.000;no;👨‍🍳]
+$addSelectMenuOption[newjob;Vendedor;vendedor-$authorID;Salario: 7.000;no;🏬]
+
+$elseif[$var[job]==pedreiro]
+$globalCooldown[5h;:x: | Voce trabalhou na obra recentemente, aguarde %time%]
+$title[👷‍♂️ | Trabalho]
+$description[> Você construiu uma casa e recebeu **12.000**]
+
+$setVar[Money;$sum[$getVar[Money;$authorID];12000];$authorID]
+
+$elseif[$var[job]==cozinheiro]
+$globalCooldown[7h;:x: | Voce cozinhou recentemente, aguarde %time%]
+$title[👨‍🍳 | Trabalho]
+$description[> Você realizou pedidos do restaurante e recebeu **17.000**]
+
+$setVar[Money;$sum[$getVar[Money;$authorID];17000];$authorID]
+
+$elseif[$var[job]==vendedor]
+$globalCooldown[3h;:x: | Voce vendeu produtos recentemente, aguarde %time%]
+$title[🏬 | Vendas]
+$description[> Você vendeu produtos e recebeu **7.000**]
+
+$setVar[Money;$sum[$getVar[Money;$authorID];7000];$authorID]
+$endif
