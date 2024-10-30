@@ -1,0 +1,13 @@
+
+{
+  "teste": ["t", "te"],
+  "help": ["ajuda", "h", "comandos", "commands"],
+  "botinfo": ["b", "infobot"],
+  "eval": [],
+  "ping": [],
+  "serverinfo": ["s", "infoserver"],
+  "atm": ["saldo", "bal", "carteira", "sucoins", "balance"],
+  "work": ["trabalhar"],
+  "blacklist": ["black", "bl", "listblack"],
+  "unblacklist": ["unblack", "unbl", "unlistblack"]
+}
