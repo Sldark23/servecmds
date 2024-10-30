@@ -5,5 +5,9 @@
   "botinfo": ["b", "infobot"],
   "eval": [],
   "ping": [],
-  "serverinfo": ["s", "infoserver"]
+  "serverinfo": ["s", "infoserver"],
+  "atm": ["saldo", "bal", "carteira", "sucoins", "balance"],
+  "work": ["trabalhar"],
+  "blacklist": ["black", "bl", "listblack"],
+  "unblacklist": ["unblack", "unbl", "unlistblack"]
 }
