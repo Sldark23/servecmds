@@ -10,5 +10,6 @@
   "work": ["trabalhar"],
   "blacklist": ["black", "bl", "listblack"],
   "unblacklist": ["unblack", "unbl", "unlistblack"],
-  "rank": ["top", "ranking", "r", "rk"]
+  "rank": ["top", "ranking", "r", "rk"],
+  "pay": ["pagar", "Transferir",]
 }
