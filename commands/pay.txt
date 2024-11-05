@@ -1,0 +1,31 @@
+$nomention
+$color[A020F0]
+$onlyIf[$guildID!=;]
+$cooldown[3s;]
+$onlyIf[$isSlash!=true;🗽 *| Este comando ainda está sendo construído ele está disponível em prefixo!.*]
+$onlyIf[$mentioned[1]!=;❌ *| Mencione alguém para prosseguir.*]
+$onlyIf[$mentioned[1]!=$authorID;❌ *| Você não transferir para você mesmo.*]
+$onlyIf[$isBot[$mentioned[1]]!=true;❌ *| Menção não pode se um bot.*]
+$onlyIf[$noMentionMessage!=;❌ *| Preciso que você coloque um valor durante o comando.*]
+$onlyIf[$checkContains[$noMentionMessage;%{-SEMICOL-}%;-;--;+;%{DOL}%;$;$$;&;";!;?;/;@;#;*;.;\[;%ESCAPED%;\;=;[;₩;¥;£;€;–;–;‐;:;};{;|;~;`;°;#;•;°;》;《;¤;%;٪;°;•;○;●;□;■;♤;♡;◇;♧;☆;▪︎;¤;《;》;¡;¿;|;{;};_;¿;NaN;Inf;nan;inf;NAN;NAn;nAn;nAN;INF;iNf;INf]!=true;❌ *| A quantia contem símbolos.*]
+$onlyIf[$checkContains[$toLowercase[$noMentionMessage];inf;infinity;-;.;,;\;$]==false;:ErroRecusado: *| A quantia contem símbolos.*]
+$onlyIf[$isNumber[$noMentionMessage]==true;❌ *| Não e número valido.*]
+$onlyIf[$noMentionMessage>0;❌ *| Valor que foi inserido não pode ser abaixo de 0.*]
+$onlyIf[$noMentionMessage<=$getVar[Money;$authorID];❌ *| Você não tem essa quantia.*]
+
+<@$mentioned[1]> / <@$authorID>
+$title[⚪ | Operação de `$username`]
+$description[
+- Você enviou $numberSeparator[$noMentionMessage], para o usuário `$username[$mentioned[1]]`.
+d1854be5]
+
+Abaixo terá mais informações.]
+$addField[Usuário: `$username[$mentioned[1]]`;
+Usuário atualmente está: $getUserStatus[$mentioned[1]]
+]
+$addField[Valor da operação junto com seu id:;
+Valor:$numberSeparator[$noMentionMessage]
+ID:**||$random[1111111111;9999999999]||**]
+$addField[Status da operação:;✅ | Concluída]
+$setVar[Money;$sum[$noMentionMessage;$getVar[Money;$mentioned[1]]];$mentioned[1]]
+$setVar[Money;$sub[$getVar[Money;$authorID];$noMentionMessage];$authorID]
