@@ -1,19 +1,19 @@
 $nomention
 $suppressErrors[:x: - Algum erro aconteceu, tente novamente!]
-$var[xit;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$noMentionMessage[2];k;000];metade;$calculate[$getVar[coin;$authorID]/2]];m;000000];b;000000000];t;000000000000];q;000000000000000];sx;000000000000000000];all;$getVar[coin;$authorID]]]
+$var[xit;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$noMentionMessage[2];k;000];metade;$calculate[$getVar[Money;$authorID]/2]];m;000000];b;000000000];t;000000000000];q;000000000000000];sx;000000000000000000];all;$getVar[Money;$authorID]]]
 $onlyIf[$mentioned[1]!=;✅ - Mencione alguém para apostar!]
 $onlyIf[$mentioned[1]!=$authorID;❌ - Você não pode apostar com você mesmo!]
 $onlyIf[$isBot[$mentioned[1]]==false;❌ - Você não pode apostar com um bot!]
 $onlyIf[$var[xit]!=;✅ - Diga-me um valor de aposta!]
 $onlyIf[$var[xit]>0;❌ - Aposte um número maior que zero!]
 $onlyIf[$isNumber[$var[xit]]==true;❌ - Digite apenas números]
-$onlyIf[$getVar[coin;$authorID]>=$var[xit];❌ - Você não tem "$noMentionMessage" de coins!]
-$onlyIf[$getVar[coin;$mentioned[1]]>=$var[xit];❌ - <@$authorID>, $username[$mentioned[1]] não tem tudo isso de coins para apostar.]
+$onlyIf[$getVar[Money;$authorID]>=$var[xit];❌ - Você não tem "$noMentionMessage" de Moneys!]
+$onlyIf[$getVar[Money;$mentioned[1]]>=$var[xit];❌ - <@$authorID>, $username[$mentioned[1]] não tem tudo isso de Moneys para apostar.]
 <@$mentioned[1]>
 $title[💰 - Aposta]
 $color[2983Ff]
 $description[
-{ 🎰 } | $username[$mentioned[1]], $username quer fazer uma aposta com você valendo **$numberSeparator[$var[xit]] Coins**!
+{ 🎰 } | $username[$mentioned[1]], $username quer fazer uma aposta com você valendo **$numberSeparator[$var[xit]] sucoins**!
 
 { ✅ } | __*Aperte em*__ `Aceitar` __*para aceitar a aposta!*__
 { ❌ } | __*Aperte em*__ `Recusar` __*para recusar a aposta!*__]
