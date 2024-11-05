@@ -11,5 +11,6 @@
   "blacklist": ["black", "bl", "listblack"],
   "unblacklist": ["unblack", "unbl", "unlistblack"],
   "rank": ["top", "ranking", "r", "rk"],
-  "pay": ["pagar", "Transferir",]
+  "pay": ["pagar", "Transferir",],
+  "bet": ["aposta"]
 }
